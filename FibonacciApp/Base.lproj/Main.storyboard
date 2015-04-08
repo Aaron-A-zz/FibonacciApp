@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FibonacciApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIQ-d9-2GH">
+                                <rect key="frame" x="16" y="40" width="568" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Includes Zero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXA-g7-c3c">
+                                <rect key="frame" x="16" y="391" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5Id-vw-kwm"/>
+                                    <constraint firstAttribute="width" constant="105" id="e31-Rk-GOT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUN-X6-CG0">
+                                <rect key="frame" x="276" y="386" width="51" height="31"/>
+                                <connections>
+                                    <action selector="updateFibonacciSequence" destination="BYZ-38-t0r" eventType="valueChanged" id="88g-GW-dJv"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Items in Sequence:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnN-et-Tud">
+                                <rect key="frame" x="16" y="454" width="234" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="Kz0-cW-auT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="94" translatesAutoresizingMaskIntoConstraints="NO" id="1u3-Xs-4UE">
+                                <rect key="frame" x="14" y="498" width="572" height="31"/>
+                                <connections>
+                                    <action selector="updateFibonacciSequence" destination="BYZ-38-t0r" eventType="valueChanged" id="5D3-GK-FcX"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRe-e8-5Gr">
+                                <rect key="frame" x="551" y="391" width="32.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="2" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="eFY-av-6KW">
+                                <rect key="frame" x="530" y="420" width="53.5" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fibonacci Sequence" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uye-rd-V5o">
+                                <rect key="frame" x="222" y="351" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="Vr0-WM-HYW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SIQ-d9-2GH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3VE-nC-6cI"/>
+                            <constraint firstItem="1u3-Xs-4UE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3i5-5A-8uM"/>
+                            <constraint firstItem="QnN-et-Tud" firstAttribute="top" secondItem="tXA-g7-c3c" secondAttribute="bottom" constant="42" id="5tl-3a-5kR"/>
+                            <constraint firstItem="Uye-rd-V5o" firstAttribute="top" secondItem="SIQ-d9-2GH" secondAttribute="bottom" constant="8" id="9MC-8L-cGO"/>
+                            <constraint firstItem="eFY-av-6KW" firstAttribute="trailing" secondItem="IRe-e8-5Gr" secondAttribute="trailing" id="Eyl-HG-FEf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1u3-Xs-4UE" secondAttribute="bottom" constant="72" id="Gwo-mT-arA"/>
+                            <constraint firstItem="SIQ-d9-2GH" firstAttribute="leading" secondItem="tXA-g7-c3c" secondAttribute="leading" id="LyH-Le-TaL"/>
+                            <constraint firstItem="IRe-e8-5Gr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MIY-nZ-b5b"/>
+                            <constraint firstItem="IRe-e8-5Gr" firstAttribute="trailing" secondItem="SIQ-d9-2GH" secondAttribute="trailing" id="PQm-pD-77C"/>
+                            <constraint firstItem="Uye-rd-V5o" firstAttribute="centerX" secondItem="LUN-X6-CG0" secondAttribute="centerX" constant="17" id="Phc-uW-jY4"/>
+                            <constraint firstItem="LUN-X6-CG0" firstAttribute="centerY" secondItem="IRe-e8-5Gr" secondAttribute="centerY" id="T3f-P4-r1k"/>
+                            <constraint firstItem="QnN-et-Tud" firstAttribute="leading" secondItem="1u3-Xs-4UE" secondAttribute="leading" id="Uzd-rh-zfq"/>
+                            <constraint firstItem="tXA-g7-c3c" firstAttribute="leading" secondItem="QnN-et-Tud" secondAttribute="leading" id="VNg-VZ-UTB"/>
+                            <constraint firstItem="1u3-Xs-4UE" firstAttribute="top" secondItem="eFY-av-6KW" secondAttribute="bottom" constant="38" id="Z21-Dt-emq"/>
+                            <constraint firstItem="eFY-av-6KW" firstAttribute="leading" secondItem="IRe-e8-5Gr" secondAttribute="leading" constant="-21" id="ZGV-bx-lCy"/>
+                            <constraint firstItem="eFY-av-6KW" firstAttribute="trailing" secondItem="1u3-Xs-4UE" secondAttribute="trailing" id="aFI-Mr-CIH"/>
+                            <constraint firstItem="IRe-e8-5Gr" firstAttribute="firstBaseline" secondItem="tXA-g7-c3c" secondAttribute="firstBaseline" id="cwm-y7-Kyh"/>
+                            <constraint firstItem="1u3-Xs-4UE" firstAttribute="top" secondItem="LUN-X6-CG0" secondAttribute="bottom" constant="81" id="dIs-Me-MVi"/>
+                            <constraint firstItem="tXA-g7-c3c" firstAttribute="top" secondItem="SIQ-d9-2GH" secondAttribute="bottom" constant="48" id="gQi-Ne-5p8"/>
+                            <constraint firstItem="IRe-e8-5Gr" firstAttribute="baseline" secondItem="tXA-g7-c3c" secondAttribute="baseline" id="hVm-uR-2Sn"/>
+                            <constraint firstItem="1u3-Xs-4UE" firstAttribute="top" secondItem="QnN-et-Tud" secondAttribute="bottom" constant="23" id="ic6-tC-rzz"/>
+                            <constraint firstItem="eFY-av-6KW" firstAttribute="top" secondItem="IRe-e8-5Gr" secondAttribute="bottom" constant="8" symbolic="YES" id="pg4-cR-31Z"/>
+                            <constraint firstItem="1u3-Xs-4UE" firstAttribute="centerX" secondItem="LUN-X6-CG0" secondAttribute="centerX" id="qwu-p9-Gx4"/>
+                            <constraint firstItem="LUN-X6-CG0" firstAttribute="top" secondItem="Uye-rd-V5o" secondAttribute="bottom" constant="14" id="wCu-ux-Udh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="includesZeroLabel" destination="IRe-e8-5Gr" id="AVJ-zE-kza"/>
+                        <outlet property="includesZeroSwitch" destination="LUN-X6-CG0" id="Fhw-f1-P6V"/>
+                        <outlet property="numberOfItemsLabel" destination="eFY-av-6KW" id="w8r-BI-Hyz"/>
+                        <outlet property="numberOfItemsSlider" destination="1u3-Xs-4UE" id="mR3-05-2wb"/>
+                        <outlet property="textView" destination="SIQ-d9-2GH" id="uf9-Fe-GgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
